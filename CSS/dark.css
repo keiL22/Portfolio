@@ -25,6 +25,25 @@ p{
     color: rgb(129, 129, 129);
 }
 
+/* Anchors */
+
+.IntroLink{
+    position: relative;
+    top:-200px;
+}
+.SkillsLink{
+    position: relative;
+    top:-200px;
+}
+.ProjectsLink{
+    position: relative;
+    top:-200px;
+}
+.ContactLink{
+    position: relative;
+    top:-200px;
+}
+
 /* Navigation Menu */
 nav{
     background-color: rgb(44, 44, 44);
@@ -225,6 +244,75 @@ nav{
 .resume-link:hover{
     border: 2px solid white;
     color: white;
+}
+
+/*Skills*/
+
+.skills{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-box{
+    background-color: rgb(44, 44, 44);
+    padding: 20px 20px;
+    border-radius: 10px;
+
+    max-width: 750px;
+    min-width: 750px;
+    margin: 0 auto;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Projects*/
+
+.projects{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-box{
+    background-color: rgb(44, 44, 44);
+    padding: 20px 20px;
+    border-radius: 10px;
+
+    max-width: 750px;
+    min-width: 750px;
+    margin: 0 auto;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Contact*/
+
+.contact{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-box{
+    background-color: rgb(44, 44, 44);
+    padding: 20px 20px;
+    border-radius: 10px;
+
+    max-width: 750px;
+    min-width: 750px;
+    margin: 0 auto;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 @keyframes fadeIn {
