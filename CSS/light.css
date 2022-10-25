@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@300;400;600&display=swap');
+
+*{
+    background-color: rgb(243, 243, 243);
+    font-family: 'Mitr', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li{
+    background-color: white;
+    list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: black;
+    text-align: center;
+    line-height: 1.2;
+}
+
+p{
+    color: rgb(46, 46, 46);
+}
+
+/* Navigation Menu */
+nav{
+    background-color: white;
+    position: center;
+    height: 100px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-box{
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    background-color: white;
+}
+
+.nav-list{
+    display: flex;
+}
+
+.name-logo{
+    background-color: white;
+    font-size: 20px;
+    font-weight: 700;
+    color: purple;
+}
+
+.nav-link{
+    background-color: #ffffff00;
+    margin: 0px 16px;
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+    padding: 2px 15px;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+.nav-link:hover{
+    background-color: purple;
+    color: white;
+    
+}
+
+.nav-darkmode{
+    margin-top: -10px;
+    background-color: #ffffff00;
+    text-decoration: none;
+    font-weight: 400;
+    border: 2px solid black;
+    color: black;
+    padding: 2px 25px;
+    border-radius: 10px;
+    transition: all 0.7s ease;
+}
+
+.nav-darkmode:hover{
+    border: 2px solid purple;
+    color: purple
+}
+
+.flex{
+    flex: 1;
+}
+
+/*About me*/
+
+.about-me{
+    margin-top: 200px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me-box{
+    background-color: white;
+    padding: 20px 20px;
+    border-radius: 10px;
+
+    max-width: 750px;
+    min-width: 750px;
+    margin: 0 auto;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me-box h1{
+    background-color: #ffffff00;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.about-me-box p{
+    text-align: center;
+    background-color: #ffffff00;
+}
+
+.about-me-list{
+    max-width: 600px;
+    min-width: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me-info{
+    z-index: -1;
+    
+    margin: 0px 16px;
+    border-radius: 10px;
+    background-color: white;
+    min-width: 230px;
+    max-width: 230px;
+    min-height: 380px;
+    max-height: 380px;
+    padding: 20px 20px;
+    transition: .5s;
+
+    opacity: 0;
+    animation-name: fadeIn;
+	animation-duration: 2s;
+	animation-delay: .2s;
+	animation-fill-mode: forwards;
+}
+.about-me-info h4{
+    padding: 40px 0px 5px 0px;
+    background-color: #ffffff00;
+}
+
+.about-me-info p{
+    font-size: 12px;
+    padding: 20px 0px;
+    background-color:#ffffff00;
+}
+
+.about-me-info:hover{
+    transform: scale(1.1);
+}
+
+.about-me-link{
+    max-width: 750px;
+    min-width: 750px;
+    margin: 0 auto;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff00;
+    margin-top: 40px;
+}
+
+.fab , .far{
+    background-color: #ffffff00;
+}
+
+.about-me-list li{
+    background-color: #ffffff00;
+}
+
+.about-link{
+    transform: scale(1.8);
+    margin: 0px 50px;
+    background-color: #ffffff00;
+    font-size: 20px;
+    color: purple;
+    text-decoration: none;
+    padding: 0px 16px;
+    transition: all 0.7s ease;
+}
+
+.about-link:hover{
+    color: black;
+}
+
+.resume-link{
+    margin: 0px 70px;
+    font-size: 15px;
+    background-color: #ffffff00;
+    text-decoration: none;
+    font-weight: 400;
+    border: 2px solid purple;
+    color: purple;
+    padding: 2px 15px;
+    border-radius: 10px;
+    transition: all 0.7s ease;
+}
+
+.resume-link:hover{
+    border: 2px solid black;
+    color: black;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
