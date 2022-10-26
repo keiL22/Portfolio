@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="./CSS/light.css">
+    <link id="stylesheet" rel="stylesheet" href="./CSS/light.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=0.7">
-    <script type="application/javascript" src="./JavaScript/SwitchMode.js"></script>
-    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
     <title>Keisuke Lester</title>
+
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <section id="Navigation">
-        <a class="IntroLink" id="IntroLink"></a>
-        <div class="nav-box">
-            <nav>
+    <section id="Primary-Header">
+        <a class="anchor" id="IntroLink"></a>
+        <div class="top-container">
+            <nav class="primary-navigation">
                 <div class="name-logo">KEISUKE LESTER</div>
-                <ul class="nav-list">
+                <ul class="navigation-list">
                     <li>
-                        <a href="#IntroLink" class="nav-link">About</a>
+                        <a href="#IntroLink" class="navigation-link">About</a>
                     </li>
                     <li>
-                        <a href="#SkillsLink" class="nav-link">Skills</a>
+                        <a href="#SkillsLink" class="navigation-link">Skills</a>
                     </li>
                     <li>
-                        <a href="#ProjectsLink" class="nav-link">Projects</a>
+                        <a href="#ProjectsLink" class="navigation-link">Projects</a>
                     </li>
                     <li>
-                        <a href="#ContactLink" class="nav-link">Contact</a>
+                        <a href="#ContactLink" class="navigation-link">Contact</a>
                     </li>
                     <li>
-                        <button id="mode" class="nav-darkmode" onclick="toggleTheme()">Dark</button>
+                        <label for="mode-toggle" class="navigation-mode-toggle">
+                            <input id="mode-toggle" type="checkbox"/><span class="slider"></span>
+                        </label>
                     </li>
                 </ul>
             </nav>
@@ -41,51 +43,48 @@
                 <figure>
                     Image
                 </figure>
-                <h1 class="about-me-title" >Hi! I'm Keisuke Lester</h1>
-                <p class="about-me-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut justo felis, interdum at vestibulum eu, commodo ac nibh. Vestibulum ac maximus arcu. Morbi eget nisl non orci tincidunt rhoncus. Sed maximus, justo eu iaculis iaculis, orci neque maximus turpis, vel bibendum est augue vitae ante.</p>
-                
+                <div class="about-me-title" >Hi! I'm Keisuke Lester</div>
+                <div class="about-me-text" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut justo felis, interdum at vestibulum eu, commodo ac nibh. Vestibulum ac maximus arcu. Morbi eget nisl non orci tincidunt rhoncus. Sed maximus, justo eu iaculis iaculis, orci neque maximus turpis, vel bibendum est augue vitae ante.</div> 
             </div>
             <div class="about-me-link">
-                <a href="https://www.linkedin.com/in/keisuke-l-4326851b6/" class="about-link">
+                <a href="https://www.linkedin.com/in/keisuke-l-4326851b6/" class="about-me-link-element">
                     <i class="fab fa-linkedin-in"></i>
                 </a>
-                <a href="https://github.com/KeisukeL" class="about-link">
+                <a href="https://github.com/KeisukeL" class="about-me-link-element">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="mailto:keisuke.lester@my.utsa.edu" class="about-link">
+                <a href="mailto:keisuke.lester@my.utsa.edu" class="about-me-link-element">
                     <i class="far fa-envelope"></i>
                 </a>
-                <a href="./Sources/Internship Resume-Complete.pdf" class="resume-link">Resume</a>
+                <a href="./Sources/Internship Resume-Complete.pdf" class="about-me-resume-link">Resume</a>
             </div>
             <ul class="about-me-list">
                 <li>
-                    <div class="about-me-info 
-                    info-box-1">
-                        <h4>TITLE</h4>
+                    <div class="about-me-info-element">
+                        <div class="about-me-info-element-title">TITLE</div>
                         <hr>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut justo felis, interdum at vestibulum eu, commodo ac nibh. Vestibulum ac maximus arcu. Morbi eget nisl non orci tincidunt rhoncus.</p>
+                        <div class="about-me-info-element-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut justo felis, interdum at vestibulum eu, commodo ac nibh. Vestibulum ac maximus arcu. Morbi eget nisl non orci tincidunt rhoncus.</div>
                     </div>
                 </li>
                 <li>
-                    <div class="about-me-info info-box-2">
-                        <h4>TITLE</h4>
+                    <div class="about-me-info-element">
+                        <div class="about-me-info-element-title">TITLE</div>
                         <hr>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut justo felis, interdum at vestibulum eu, commodo ac nibh. Vestibulum ac maximus arcu. Morbi eget nisl non orci tincidunt rhoncus.</p>
+                        <div class="about-me-info-element-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut justo felis, interdum at vestibulum eu, commodo ac nibh. Vestibulum ac maximus arcu. Morbi eget nisl non orci tincidunt rhoncus.</div>
                     </div>
                 </li>
                 <li>
-                    <div class="about-me-info 
-                    info-box-3">
-                        <h4>TITLE</h4>
+                    <div class="about-me-info-element">
+                        <div class="about-me-info-element-title">TITLE</div>
                         <hr>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut justo felis, interdum at vestibulum eu, commodo ac nibh. Vestibulum ac maximus arcu. Morbi eget nisl non orci tincidunt rhoncus.</p>
+                        <div class="about-me-info-element-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut justo felis, interdum at vestibulum eu, commodo ac nibh. Vestibulum ac maximus arcu. Morbi eget nisl non orci tincidunt rhoncus.</div>
                     </div>
                 </li>
             </ul>
         </div>
     </section>
     <section id="Skills">
-        <a class="SkillsLink" id="SkillsLink"></a>
+        <a class="anchor" id="SkillsLink"></a>
         <div class="skills">
             <div class="skills-box">
                 SKILLS SECTION
@@ -93,7 +92,7 @@
         </div>
     </section>
     <section id="Projects">
-        <a class="ProjectsLink" id="ProjectsLink"></a>
+        <a class="anchor" id="ProjectsLink"></a>
         <div class="projects">
             <div class="projects-box" >
                 PROJECTS SECTION
@@ -101,7 +100,7 @@
         </div>
     </section>
     <section id="Contact">
-        <a class="ContactLink" id="ContactLink"></a>
+        <a class="anchor" id="ContactLink"></a>
         <div class="contact">
             <div class="contact-box">
                 CONTACT SECTION
@@ -109,4 +108,5 @@
         </div>
     </section>
 </body>
+<script type="application/javascript" src="./JavaScript/SwitchMode.js"></script>
 </html>
