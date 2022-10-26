@@ -7,13 +7,13 @@
 
     --color-primary-400: rgb(0, 9, 44);
 
-    --color-neutral-400: rgb(238, 238, 238);
+    --color-neutral-400: rgb(230, 230, 230);
     --color-neutral-100: rgb(255, 255, 255);
 
     --color-shadow-100: rgb(0, 0, 0, 0.2);
     --color-shadow-400: rgb(0, 0, 0, 0.4);
 
-    --color-toggle-light: rgb(250,8,67);
+    --color-toggle-light: rgb(199, 199, 199);
     --color-toggle-dark:  rgb(29, 29, 29);
     --color-toggle-circle: rgb(255, 255, 255);
 
