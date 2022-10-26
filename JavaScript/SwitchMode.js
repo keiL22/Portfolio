@@ -15,13 +15,15 @@ checkbox.addEventListener("change", function() {
 });
 
 function darkmode() {
-    document.getElementById("stylesheet").setAttribute("href", './CSS/dark.css');
+    var element = document.body;
+    element.className = "dark-mode";
     checkbox.checked = true;
     sessionStorage.setItem("mode", "dark");
 }
 
 function lightmode() {
-    document.getElementById("stylesheet").setAttribute("href", './CSS/light.css');
+  var element = document.body;
+  element.className = "light-mode";
     checkbox.checked = false;
     sessionStorage.setItem("mode", "light");
 }

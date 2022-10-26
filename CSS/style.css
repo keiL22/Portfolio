@@ -54,6 +54,40 @@
     }
 }
 
+.light-mode{
+    --color-accent-400: rgb(250,8,67);
+    --color-accent-100: rgb(95, 2, 25);
+
+    --color-primary-400: rgb(0, 9, 44);
+
+    --color-neutral-400: rgb(230, 230, 230);
+    --color-neutral-100: rgb(255, 255, 255);
+
+    --color-shadow-100: rgb(0, 0, 0, 0.2);
+    --color-shadow-400: rgb(0, 0, 0, 0.4);
+
+    --color-toggle-light: rgb(199, 199, 199);
+    --color-toggle-dark:  rgb(29, 29, 29);
+    --color-toggle-circle: rgb(255, 255, 255);
+}
+
+.dark-mode{
+    --color-accent-400: rgb(8,250,191);
+    --color-accent-100: rgb(2, 95, 72);
+
+    --color-primary-400: rgb(230, 230, 230);
+
+    --color-neutral-400: rgb(29, 29, 29);
+    --color-neutral-100:  rgb(44, 44, 44);
+
+    --color-shadow-100: rgb(0, 0, 0, 0.2);
+    --color-shadow-400: rgb(0, 0, 0, 0.4);
+
+    --color-toggle-light: rgb(199, 199, 199);
+    --color-toggle-dark:  rgb(29, 29, 29);
+    --color-toggle-circle: rgb(255, 255, 255);
+}
+
 *, *::before, *::after{
     box-sizing: border-box;
 }
