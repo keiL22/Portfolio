@@ -34,15 +34,20 @@
     --font-size-body: var(--font-size-200);
     --font-size-nav: var(--font-size-100);
     --font-size-button: var(--font-size-300);
+    --font-size-logo: var(--font-size-400);
     --font-size-title: var(--font-size-400);
     --font-size-heading: var(--font-size-500);
+
+    --anchor-pixels: -200px;
 }
 
-@media (min-width: 50em){
+@media only screen and (max-device-width: 480px){
     :root{
-
         --font-size-body: var(--font-size-300);
         --font-size-nav: var(--font-size-200);
+        --font-size-logo: var(--font-size-100);
+
+        --anchor-pixels: 0px;
     }
 }
 
@@ -89,7 +94,7 @@ body{
 .anchor{
     /* Positioning */
     position: relative;
-    top:-200px;
+    top: var(--anchor-pixels);
 }
 
 /* Navigation Menu */
@@ -129,7 +134,7 @@ body{
     color: var(--color-primary-400);
     font-weight: var(--font-weight-light);
     font-family: var(--font-family-heading);
-    font-size: var(--font-size-title);
+    font-size: var(--font-size-logo);
     border: 2px solid var(--color-primary-400);
     text-transform: uppercase;
 
