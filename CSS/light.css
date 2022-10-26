@@ -3,12 +3,15 @@
 
 :root{
     --color-accent-400: rgb(250,8,67);
-    --color-accent-100: rgb(153,3,40);
+    --color-accent-100: rgb(95, 2, 25);
 
     --color-primary-400: rgb(0, 9, 44);
 
     --color-neutral-400: rgb(238, 238, 238);
     --color-neutral-100: rgb(255, 255, 255);
+
+    --color-shadow-100: rgb(0, 0, 0, 0.2);
+    --color-shadow-400: rgb(0, 0, 0, 0.4);
 
     --color-toggle-light: rgb(250,8,67);
     --color-toggle-dark:  rgb(29, 29, 29);
@@ -94,7 +97,7 @@ body{
 .top-container{
     /* Styling */
     background-color: var(--color-neutral-100);
-    box-shadow: rgba(0, 0, 0, 0.13) 0px 48px 100px 0px;
+    box-shadow: var(--color-shadow-100) 0px 48px 100px 0px;
 
     /* Positioning */
     z-index: 1;
@@ -124,10 +127,13 @@ body{
 .name-logo{
     /* Styling */
     color: var(--color-primary-400);
-    font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-light);
     font-family: var(--font-family-heading);
     font-size: var(--font-size-title);
+    border: 2px solid var(--color-primary-400);
     text-transform: uppercase;
+
+    padding: 2px 5px;
 }
 
 .navigation-link{
@@ -136,14 +142,16 @@ body{
     font-weight: var(--font-weight-bold);
     font-family: var(--font-family-primary);
     font-size: var(--font-size-nav);
+    text-align: center;
     text-transform: uppercase;
     text-decoration: none;
     cursor: pointer;
 
     /* Positioning */
-    margin: 0px 16px;
-    padding: 2px 15px;
-    border-radius: 10px;
+    display: inline-block;
+    width: 100px;
+    position: relative;
+    padding: 40px 0px;
 
     /* Annimating */
     transition: all 0.5s ease-in-out;
@@ -154,8 +162,31 @@ body{
     background-color: var(--color-neutral-400);
 }
 
+.navigation-link::before{
+    /* Styling */
+    background-color: var(--color-primary-400);
+    content: '';
+
+    /* Positioning */
+    margin: -42px 0px;
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: 0%;
+
+    /* Annimating */
+    transition: all 0.5s ease-in-out;
+}
+
+.navigation-link:hover::before{
+    /* Positioning */
+    width: 100%;
+}
+
 .navigation-mode-toggle {
     /* Positioning */
+    margin-left: 20px;
+    margin-top: 38px;
     position: relative;
     display: inline-block;
     width: 40px;
@@ -224,7 +255,7 @@ input:checked + .slider:before {
     /* Styling */
     text-align: center;
     background-color: var(--color-neutral-100);
-    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    box-shadow: var(--color-shadow-100) 0px 3px 12px;
     
     /* Positioning */
     max-width: 750px;
@@ -276,7 +307,7 @@ input:checked + .slider:before {
     /* Styling */
     text-align: center;
     background-color: var(--color-neutral-100);
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    box-shadow: var(--color-shadow-400) 0px 25px 20px -20px;
 
     /* Positioning */
     z-index: -1;
@@ -319,7 +350,7 @@ input:checked + .slider:before {
 
 .about-me-info-element-body:hover{
     /* Styling */
-    color: var(--color-accent-100);
+    color: var(--color-accent-400);
 }
 
 .about-me-info-element:hover{
@@ -347,8 +378,10 @@ input:checked + .slider:before {
 
     /* Positioning */
     margin: 0px 50px;
+    
     text-decoration: none;
     padding: 0px 16px;
+    
 
     /* Annimating */
     transition: all 0.7s ease-in-out;
