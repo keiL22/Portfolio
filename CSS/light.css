@@ -41,13 +41,16 @@
     --anchor-pixels: -200px;
 }
 
-@media only screen and (max-device-width: 480px){
+@media only screen and (max-device-width: 562px){
     :root{
         --font-size-body: var(--font-size-300);
         --font-size-nav: var(--font-size-200);
         --font-size-logo: var(--font-size-100);
-
-        --anchor-pixels: 0px;
+        --anchor-pixels: -50px; 
+    }
+    .introanchor{
+        position: relative;
+        top: 0; 
     }
 }
 
@@ -61,7 +64,7 @@
     font: inherit;
 }
 
-html:focus-within {
+html {
     scroll-behavior: smooth;
 }
 
